@@ -26,7 +26,7 @@ const Find = () => {
           // install Swiper modules
           modules={[Navigation, Pagination, Scrollbar, A11y]}
           spaceBetween={10}
-          slidesPerView={5}
+          slidesPerView={4}
           navigation
           breakpoints={{
             // when window width is >= 340px

@@ -17,7 +17,7 @@ const Navbar = () => {
       <nav>
         <ul className={nav ? [styles.menu, styles.active].join(' ') : [styles.menu]} >
           <li>
-            <a href='/#'>Learn More</a>
+            <a href='/#'>Learn more</a>
           </li>
           <li>
             <a href='/#'>Log in</a>
@@ -25,9 +25,9 @@ const Navbar = () => {
           <li>
             <a href='/#'>Sign up</a>
           </li>
-          <li>
+          {/* <li>
             <AiOutlineSearch size={25} style={{ marginTop: '6px' }} />
-          </li>
+          </li> */}
           <li>
             <AiOutlineUser size={25} style={{ marginTop: '6px' }} />
           </li>
@@ -35,7 +35,6 @@ const Navbar = () => {
       </nav>
       <div onClick={()=> setNav(!nav)} className={styles.mobile_btn}>
         {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
-        
       </div>
     </header>
   );
